@@ -78,7 +78,24 @@ function wordCounter (str) {
     return wordTotal +1;
 }
 
+function wordFinder (str) {
+    let wordTimes = 0;
+    
+      for (let i = 0; i < str.length; i++) {
+          
+          if (str[i] === "et") {
+              wordTotal++;
+            }
+     
+      }
+      return wordTotal;
+  }
+
 console.log(wordCounter(longText));
+
+let wordCount = longText.split(' et').length -1;
+  
+console.log(wordCount);  ///////// me cago en todo lo que escribí antes.
 
 // Bonus 2: Count the repetitions of a word in a text
 
@@ -106,3 +123,4 @@ for (let i = preparedPhrase.length - 1; i > -1; i--) {
 }
 
 console.log(checkStupidPalindrome(phraseToCheck));
+
